@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$$$shop</title>
+    <meta name="description" content="$$$shop - магазин китайских сувениров, уютных мелочей и вкусняшек. Широкий ассортимент товаров для дома и подарков.">
+    <meta name="keywords" content="китайские сувениры, подарки, аксессуары, еда, интернет-магазин, $$$shop">
+    <meta name="author" content="703Shop">
     <link rel="stylesheet" href="index.css">
+    <link rel="canonical" href="https://www.703shop.ru/" />
 </head>
 <body>
     <!-- 修改后的header部分 -->
@@ -13,7 +17,7 @@
             <div class="title-group">
                 <p id="shopName" class="shop-title">$$$shop</p>
                 <span class="telegram-link">
-                    <a href="t.me/virtualseek" class="telegram-link" id="telegramLink" target="_blank">
+                    <a href="#" class="telegram-link" id="telegramLink" target="_blank">
                         <svg class="seven-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7225)"/>
                             <path d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z" fill="white"/>
@@ -33,17 +37,16 @@
 
     <div class="categories-container">
         <div class="categories">
-            <button class="category-btn active" data-category="all">全部商品</button>
-            <button class="category-btn" data-category="home">家居生活</button>
-            <button class="category-btn" data-category="fashion">时尚配饰</button>
-            <button class="category-btn" data-category="1">时尚配饰 ｜ 家居生活</button>
-            <button class="category-btn" data-category="2">家居生活 ｜ 时尚配饰</button>
+            <button class="category-btn active" data-category="all">Все товары</button>
+            <button class="category-btn" data-category="food">Еда</button>
+            <button class="category-btn" data-category="accessories">Аксессуары</button>
         </div>
+        
     </div>
     
     <div class="products-grid" id="productsContainer"></div>
 
-    <div class="cart-floating" id="cartBtn">查看购物车 (0)</div>
+    <div class="cart-floating" id="cartBtn">Корзина (0)</div>
 
     <!-- 修改后的购物车模态框 -->
     <div class="cart-modal" id="cartModal">
@@ -53,18 +56,15 @@
                     <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
                 </svg>
             </button>
-            <h2 class="cart-title">购物清单</h2>
+            <h2 class="cart-title">Список покупок</h2>
             <ul id="cartItems"></ul>
             <div class="cart-footer">
                 <div class="price-summary">
-                    <span>总计：</span>
+                    <span>Итого: </span>
                     <span id="totalPrice" class="total-price">0.00</span>
                 </div>
                 <button class="checkout-btn">
-                    <span>立即结算</span>
-                    <svg viewBox="0 0 24 24" width="18" height="18">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-                    </svg>
+                    <span>Оформить заказ</span>
                 </button>
             </div>
         </div>
